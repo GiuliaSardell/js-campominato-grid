@@ -7,6 +7,7 @@ for (let i = 0; i < 100; i++){
     this.classList.add('clicked')
   })
 
+  sq.innerHTML=`<span> ${num}`
   
 
 
@@ -20,3 +21,11 @@ function createSquare(target){
 }
 
 
+function generateUniqueRandom(list, min, max){
+  let number =
+}
+
+
+function generateRandomNum (min,max){
+  return Math.floor(Math.random()*max-min +1)+min
+}
