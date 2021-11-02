@@ -17,7 +17,7 @@ main{
 header, footer{
   position: fixed;
   width: 100vw;
-  /* height: 80px; */
+
   background-color: white;
   display: flex;
   align-items: center;
@@ -31,6 +31,7 @@ header{
 
 footer{
   bottom: 0;
+  height: 90px;
 }
 
 .header-right, .header-left{
@@ -63,4 +64,33 @@ footer{
 
 #play{
   padding: 0 15px;
+}
+
+
+.main-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.containerMain{
+  width: 500px;
+  height: 500px;
+}
+
+.square{
+  float: left;
+  width: calc(100% / 10);
+  height: calc(100% / 10);
+  border: 2px solid black;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.square.clicked{
+  background-color: blue;
+
 }
