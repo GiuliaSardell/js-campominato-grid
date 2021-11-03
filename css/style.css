@@ -9,88 +9,56 @@ body{
 }
 
 main{
-  width: 100vw;
-  height: 100vh;
-  background-color: turquoise;
+  height: calc(100vh - 180px);
+  background-color: orange;
 }
 
 header, footer{
-  position: fixed;
-  width: 100vw;
-
   background-color: white;
-  display: flex;
-  align-items: center;
-}
-
-header{
-  top: 0;
-  display: flex;
-  justify-content: space-around;
-}
-
-footer{
-  bottom: 0;
   height: 90px;
+
 }
 
-.header-right, .header-left{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* width: 400px; */
-  height: 80%;
-  margin: 10px 0;
+
+
+.logo img{
+  width: 50px;
+  height: 50px;
 }
 
-.header-right img{
-  width: 70px;
-  height: 100%;
-}
-
-.header-right h2{
+.logo h2{
   margin: 0 20px;
 }
 
-.footer-left{
-  width: 300px;
-}
-
+/* 
 #level{
   padding: 5px;
   margin: 0 5px;
   font-size: 14px;
-}
+} */
 
 #play{
   padding: 0 15px;
 }
 
 
-.main-wrapper{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.containerMain{
+.grid{
   width: 500px;
   height: 500px;
 }
 
-.square{
+.cell{
   float: left;
   width: calc(100% / 10);
   height: calc(100% / 10);
-  border: 2px solid black;
+  border: 1px solid black;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.square.clicked{
+.cell.clicked{
   background-color: blue;
 
 }

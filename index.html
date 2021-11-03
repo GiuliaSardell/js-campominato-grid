@@ -10,59 +10,47 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <div class="container d-flex justify-content-between align-items-center">
-
-
-          <div class="header-right">
+  
+  <div class="main-wrapper d-flex flex-column">
+    <header class="container">
+      <div class="row">
+        <div class="col">
+          <div class="header-right logo d-flex align-items-center py-3">
             <img src="img/logo-boolean.png" alt="">
             <h2>Campo Minato</h2>
           </div>
+        </div>
+        <div class="col d-flex align-items-center py-3">
+          <span>Difficoltà: </span>
 
-    
+          <select class="form-select" id="level">
+            <option value="1" selected>Easy</option>
+            <option value="2">Hard</option>
+            <option value="3">Crazy</option>
+          </select>
 
-          <div class="header-left">
-            <div class="levels">
-              <span>Difficoltà: </span>
-              <select name="levels" id="level">
-                <option value="1">Easy</option>
-                <option value="2">Hard</option>
-                <option value="3">Crazy</option>
-              </select>
-              <button id="play">Play</button>
-      
-            </div>
-          </div>
-        </div>  
+          <button type="button" class="btn btn-secondary" id="play">Play</button>
+
+        </div>
       </div>
-  
-    </div>
+    </header>
 
-  </header>
 
-  <main>
-    <div class="main-wrapper">
-      <div class="containerMain">
-    
-     
-      </div>
-    </div>
-    
-  
-  </div>
-  </main>
+    <main class="d-flex justify-content-center align-items-center">
 
-  <footer>
-    <div class="container">
-      <div class="footer-left">
-        <span>Made with &hearts; by <a href="#">Boolean</a></span>
-      </div>
-    </div>
-
+      <h2>Seleziona il livello di difficoltà</h2>
  
+    </main>
+  
+  
+  
 
-  </footer>
+    <footer class="container">
+ 
+      <span>Made with &hearts; by <a href="#">Boolean</a></span>
 
+    </footer>
+  </div>
 
   <script src="js/script.js"></script>
 </body>
